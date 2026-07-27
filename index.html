@@ -11,6 +11,7 @@
         <link href="resources/ol-geocoder.min.css" rel="stylesheet">
         <link rel="stylesheet" href="./resources/ol-layerswitcher.css">
         <link rel="stylesheet" href="./resources/qgis2web.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
         <style>
         html, body {
             background-color: #ffffff;
@@ -52,57 +53,54 @@
 
     z-index:9999;
 
-    padding:12px 30px;
-
-    background:rgba(255,255,255,.75);
-
-    backdrop-filter:none;
-
-    border-radius:20px;
-
-    box-shadow:0 2px 8px rgba(0,0,0,.15);
+    background:none;
+    box-shadow:none;
+    border:none;
+    padding:0;
 
     text-align:center;
 
-    font-family:"Segoe UI",sans-serif;
-}
+    font-family:"Poppins","Segoe UI",sans-serif;
 
+    pointer-events:none;
+}
 #header h2{
+
     margin:0;
-    font-size:clamp(16px,2vw,22px);
+
+    font-size:20px;
+
+    font-weight:700;
+
+    color:#222;
+
     letter-spacing:1px;
+
+    text-shadow:
+        -1px -1px 0 #fff,
+         1px -1px 0 #fff,
+        -1px  1px 0 #fff,
+         1px  1px 0 #fff,
+         0px  0px 8px rgba(255,255,255,.9);
+
 }
 
 #header p{
+
     margin-top:3px;
-    color:#666;
-}
-        </style>
-        <style>
-        #info-panel{
-    position:absolute;
-    right:20px;
-    bottom:18px;
-    z-index:9999;
 
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
+    font-size:13px;
 
-    gap:25px;
+    font-weight:500;
 
-    padding:10px 18px;
+    color:#333;
 
-    background:rgba(255,255,255,.78);
-    backdrop-filter:none;
+    text-shadow:
+        -1px -1px 0 #fff,
+         1px -1px 0 #fff,
+        -1px  1px 0 #fff,
+         1px  1px 0 #fff;
 
-    border-radius:16px;
-
-    box-shadow:0 2px 8px rgba(0,0,0,.15);
-
-    font-family:"Segoe UI",sans-serif;
-
-    color:#2f2f2f;
 }
 
 .data-source{
@@ -172,37 +170,25 @@ transform:translateY(0);
         <style>
 @media (max-width: 768px){
 
-    #header{
+   #header{
 
-    top:10px;
+    top:12px;
 
-    left:auto;
+    left:50%;
 
-    right:10px;
-
-    transform:none;
-
-    width:auto;
-
-    max-width:180px;
-
-    padding:8px 12px;
-
-    border-radius:12px;
+    transform:translateX(-50%);
 
 }
 
 #header h2{
 
-    font-size:13px;
-
-    letter-spacing:0;
+    font-size:16px;
 
 }
 
 #header p{
 
-    display:none;
+    font-size:11px;
 
 }
 
@@ -278,18 +264,6 @@ transform:translateY(0);
             <p>Kecamatan Blado, Kabupaten Batang</p>
             </div>
         <div id="info-panel">
-
-    <div class="data-source">
-
-        <div class="title">
-            Sumber Data
-        </div>
-
-        <div class="text">
-            RBI BIG • Survei Lapangan 2026
-        </div>
-
-    </div>
 
     <div class="brand">
 
