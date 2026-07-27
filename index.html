@@ -69,7 +69,7 @@
 
 #header h2{
     margin:0;
-    font-size:22px;
+    font-size:clamp(16px,2vw,22px);
     letter-spacing:1px;
 }
 
@@ -128,7 +128,7 @@
 }
 
 .brand img{
-    height:42px;
+    height:clamp(28px,4vw,42px);
     transition:.3s;
 }
 
@@ -137,7 +137,7 @@
 }
 
 .brand-text{
-    font-size:15px;
+    font-size:clamp(11px,1.5vw,15px);
     font-weight:700;
     white-space:nowrap;
 }
@@ -166,6 +166,79 @@ opacity:1;
 transform:translateY(0);
 
 }
+
+}
+        </style>
+        <style>
+@media (max-width: 768px){
+
+    #header{
+        width:85%;
+        padding:10px 15px;
+    }
+
+    #header h2{
+        font-size:17px;
+    }
+
+    #header p{
+        font-size:12px;
+    }
+
+    #info-panel{
+
+        left:10px;
+        right:10px;
+        bottom:10px;
+
+        width:auto;
+
+        padding:10px;
+
+        gap:10px;
+
+        flex-wrap:wrap;
+
+        justify-content:center;
+    }
+
+    .brand{
+
+        width:100%;
+
+        justify-content:center;
+
+        order:1;
+    }
+
+    .data-source{
+
+        width:100%;
+
+        text-align:center;
+
+        order:2;
+    }
+
+    .brand img{
+
+        height:30px;
+    }
+
+    .brand-text{
+
+        font-size:13px;
+    }
+
+    .data-source .title{
+
+        font-size:12px;
+    }
+
+    .data-source .text{
+
+        font-size:11px;
+    }
 
 }
         </style>
